@@ -1,0 +1,42 @@
+.sobre-nos{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 24px;
+    padding: 6em 20.3em;
+}
+
+.sobre-nos__titulo{
+    color: var(--vermelho);
+    font-weight: 600;
+}
+
+.sobre-nos__pergunta{
+    color: var(--preto);
+    font-size: 48px;
+    font-weight: 600;
+}
+
+.sobre-nos__texto{
+    color: var(--cor-texto);
+    font-size: 20px;
+}
+
+@media (max-width: 600px) {
+    .sobre-nos{
+        padding: 3em 2em;
+        text-align: center;
+    }
+
+    .sobre-nos__titulo{
+        font-size: 18px;
+    }
+
+    .sobre-nos__pergunta{
+        font-size: 32px;
+    }
+
+    .sobre-nos__texto{
+        font-size: 16px;
+    }
+}

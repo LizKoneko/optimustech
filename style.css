@@ -1,0 +1,26 @@
+@import url("styles/header.css");
+@import url("styles/sobre-nos.css");
+@import url("styles/metricas.css");
+@import url("styles/vagas.css");
+@import url("styles/depoimentos.css");
+@import url("styles/footer.css");
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+:root{
+    --cor-logo: #3A404E;
+    --cor-texto: #667085;
+    --branco: #FFFFFF;
+    --vermelho: #8E2424;
+    --preto: #101828;
+    --cinza-footer: #98A2B3;
+    --fundo-vagas-abertas: #8E24240D;
+    --fonte-principal: 'Inter';
+}
+
+body{
+    background-color: var(--branco);
+    font-family: var(--fonte-principal);
+    font-size: 16px;
+    font-weight: 400;
+}

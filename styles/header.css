@@ -1,0 +1,98 @@
+.cabecalho{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0.6em 5em;
+}
+
+.cabecalho__logo{
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+    margin-right: 5em;
+}
+
+.cabecalho__titulo{
+    color: var(--cor-logo);
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.container__menu{
+    display: none;
+}
+
+.cabecalho__categorias{
+    display: flex;
+    gap: 2em;
+    margin-right: auto;
+}
+
+.categorias-celular{
+    display: none;
+}
+
+.pagina__link{
+    text-decoration: none;
+    color: var(--cor-texto);
+    font-weight: 500;
+}
+
+.cabecalho__botoes{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.botao-cadastrar{
+    background-color: var(--vermelho);
+    color: var(--branco);
+    text-decoration: none;
+    border-radius: 8px;
+    padding: 0.6em 1.3em;
+}
+
+@media (max-width: 600px) {
+    .cabecalho{
+        justify-content: space-evenly;
+        padding: 0.6em 1em;
+        position: relative;
+    }
+
+    .cabecalho__categorias{
+        display: none;
+    }
+
+    .categorias-celular{
+        display: none;
+        position: absolute;
+        top: 100%;
+        width: 50vw;
+        background-color: var(--branco);
+    }
+
+    .container__menu{
+        display: none;
+    }
+
+    .container__menu:checked~.categorias-celular{
+        display: block;
+    }
+
+    .categorias__paginas{
+        padding: 1em 2em;
+    }
+
+    .pagina__link{
+        font-size: 20px;
+        color: var(--vermelho);
+    }
+
+    .cabecalho__botoes{
+        gap: 5px;
+    }
+
+    .botao-cadastrar{
+        padding: 0.4em 0.5em;
+    }
+}
